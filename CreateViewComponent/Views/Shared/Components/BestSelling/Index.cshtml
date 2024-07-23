@@ -1,0 +1,9 @@
+﻿@model IEnumerable<CreateViewComponent.Models.ViewComponentModels.ProductModel>
+
+<div class="row">
+    <h3>@ViewBag.Title</h3>
+@foreach (var item in Model)
+{
+    @await Component.InvokeAsync("Product", item);
+}
+</div>

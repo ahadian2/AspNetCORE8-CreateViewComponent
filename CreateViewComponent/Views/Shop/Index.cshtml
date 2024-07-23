@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@await Component.InvokeAsync("First",new{Text="این یک مقدار ورودی است"})
+
+
+@await Component.InvokeAsync("Product",new ProductModel{
+    Id=1,
+    Name="Iphone",
+    Description = "Description ...",
+    Price=200,
+})
+
+@await Component.InvokeAsync("BestSelling",new{Title="Best Saling"})

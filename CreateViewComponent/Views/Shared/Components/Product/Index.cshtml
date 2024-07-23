@@ -1,0 +1,12 @@
+﻿@model CreateViewComponent.Models.ViewComponentModels.ProductModel
+
+<div class="card" style="width: 18rem;">
+    <img src="~/images/product/1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@Model.Name</h5>
+    <p class="card-text">@Model.Description</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">@Model.Price</li>
+  </ul>
+</div>
